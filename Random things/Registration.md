@@ -1,0 +1,1 @@
+https://www.nottingham.ac.uk/~sazintra/public/attend/info.php?msg=You%20are%20too%20late%20to%20register%20for%20this%20session.&body=If%20you%20believe%20this%20is%20an%20error,%20please%20inform%20the%20responsible%20staff%20member.
