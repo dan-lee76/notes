@@ -1,0 +1,2 @@
+# Database Password
+password = CMIHIT 
