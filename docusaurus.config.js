@@ -10,7 +10,7 @@ const config = {
   tagline: 'Nottingham Notes',
   url: 'https://notes.danlee.uk',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
