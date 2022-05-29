@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Nottes',
   tagline: 'Nottingham Notes',
-  url: 'https://notes.danlee.uk',
+  url: 'https://dan-lee76.github.io/notes/',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
