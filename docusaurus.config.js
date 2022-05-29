@@ -61,9 +61,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'README',
+            docId: 'Year1/README',
             position: 'left',
-            label: 'Notes',
+            label: 'Year 1',
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           // {
@@ -120,7 +120,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Dan Lee. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
