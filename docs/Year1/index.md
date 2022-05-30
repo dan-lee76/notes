@@ -1,3 +1,6 @@
+---
+slug: /Year1
+---
 # Intro
 Welcome to year 1 of notes. Please enjoy reading them :)
 
