@@ -59,7 +59,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'Year1/README',
+            docId: 'Year1/index',
             position: 'left',
             label: 'Year 1',
           },
@@ -83,6 +83,7 @@ const config = {
         ],
       },
       footer: {
+        copyright: `a Dan Lee creations. \n ${new Date().getFullYear()}©`,
       },
       prism: {
         theme: lightCodeTheme,
