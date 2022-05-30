@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknottes=self.webpackChunknottes||[]).push([[1938],{5610:function(e){e.exports=JSON.parse('{"label":"hello","permalink":"/notes/blog/tags/hello","allTagsPath":"/notes/blog/tags","count":2}')}}]);
