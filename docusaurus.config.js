@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/nottsYell.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -33,15 +33,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js')
+          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-        
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -56,7 +53,8 @@ const config = {
         title: 'Nottes',
         logo: {
           alt: 'Nottes Logo',
-          src: 'img/icon.png',
+          src: 'img/nottsBlue.svg',
+          srcDark: 'img/nottsYell.svg',
         },
         items: [
           {
@@ -65,6 +63,17 @@ const config = {
             position: 'left',
             label: 'Year 1',
           },
+          {
+            type: 'doc',
+            docId: 'Year2/README',
+            position: 'left',
+            label: 'Year 2',
+          },
+          {
+            type: 'search',
+            position: 'right',
+          },
+
           //{to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -74,33 +83,6 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Year 1',
-                to: '/docs/Year1',
-              },
-              {
-                label: 'Year 2',
-                to: '/docs/Year2',
-              },
-            ],
-          },
-          
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/dan-lee76',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Dan Lee.`,
       },
       prism: {
         theme: lightCodeTheme,
