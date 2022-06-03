@@ -1,3 +1,4 @@
+# Personas & Use Case
 Create reliable and realistic representations of your key audience segments for reference
 - Represent a major user group
 - Express and focus on the major needs and expectations of the most important user groups
@@ -12,7 +13,7 @@ To ensure personas are accurate representations of users, should:
 - Refine
 - Make them realistic 
 
-## Elements of a persona
+### Elements of a persona
 - Persona Group (i.e. web manager)
 - Fictional name
 - Job titles and major responsibilities
@@ -22,7 +23,7 @@ To ensure personas are accurate representations of users, should:
 - A quote that sums up what matters most to the persona as it relates to your site
 - Casual pictures representing that user group
 
-# Use Case
+## Use Case
 Useful for presentations to management or project stakeholders.
 Use case diagrams contain:
 - Use cases

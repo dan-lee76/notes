@@ -1,4 +1,5 @@
-# Code Conventions
+# Code Conventions & Maintainable Code
+## Code Conventions
 Maintainability is a desired property of software. Software maintenance is about responding to change using both current and new software assets.
 Complex software can become maintainable when it is understandable, whether through good documentation or through improved code readability
 
@@ -9,7 +10,7 @@ Code conventions appear to support maintainability over a wide range of contexts
 - On avg, the more code was added, more violations appeared. These were mainly commenting and final local variable violations. These accounted for 2/3 of the violations
 - Also prevalent were instances of numeric and string literals hard-coded into source code, and missing braces
 
-# Maintainable Code
+## Maintainable Code
 Allows you to quickly and easily:
 - Fix a bug, without introducing a new bug as you do so
 - Add new features, without introducing bugs as you do so

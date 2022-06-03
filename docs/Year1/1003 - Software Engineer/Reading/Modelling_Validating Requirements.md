@@ -1,4 +1,5 @@
-# User Stories
+# Modelling Req.
+## User Stories
 Very slim and high-level requirements artefacts.
 Important considerations for writing user stores (informal)
 1. Stakeholders write user stories
@@ -15,13 +16,13 @@ Important considerations for writing user stores (informal)
 Epics are large user stories, ones which are too big to implement in a single iteration.
 
 Themes are a collection of related user stories. Used to organise stories into releases.
-# Activity Diagrams
+## Activity Diagrams
 ![59d0895ba249b9e8c88ef13665f8fdaf.png](../../_resources/59d0895ba249b9e8c88ef13665f8fdaf.png)
 ![7fc7aa7f242bcaa29c6a491993c8f61b.png](../../_resources/7fc7aa7f242bcaa29c6a491993c8f61b.png)
 Can have 'swim' lanes so show who/what is performing the activity.
 Can have a timer Icon to signify when the action should be carried out
 
-# Sequence Diagrams
+## Sequence Diagrams
 Most popular for dynamic modelling.
 Typically used to model:
 - Usage scenarios
@@ -43,7 +44,7 @@ Synchronous message- where the sender waits for the results before continuing on
 
 Sequence diagrams are effectively a form of visual coding
 Dont create a complete set of sequence diagrams for the system. Only create a sequence diagram when you have complex logic that you want to think through
-# Top Risks of requirements engineering
+## Top Risks of requirements engineering
 Need to get the requirements right, otherwise the project will fail.
 - Overlooking a crucial requirement
 	- Common issue scalability, not thinking how demand/use can increase dramatically. Most solutions to fix this is by starting over from scratch

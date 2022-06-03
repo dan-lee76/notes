@@ -1,3 +1,4 @@
+# GANTT and Agile Planning
 # GANTT Charts not compatible with agile
 ## Why GANTT charts were banned in the first scrum
 They have some utility when a Product Owner has to present an idea to naive users to get a project funded. Knows once they start development, all plans are shattered and they need to self-organise themselves.
