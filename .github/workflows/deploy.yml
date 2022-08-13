@@ -4,8 +4,10 @@
 name: Deploy to GitHub Pages
 
 on:
+  pull_request:
+    branches: [documentation]
   push:
-    branches:
+    branches: [documentation]
       - main
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
