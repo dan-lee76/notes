@@ -11,11 +11,12 @@ on:
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
-  deploy:
-    name: Copy Markdowns
+  copy-docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: andstor/copycat-action@v3
+      - uses: actions/checkout@v2
+      - name: Copy Markdowns
+        uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.ACTION_TOKEN  }}
           src_branch: main
