@@ -18,7 +18,7 @@ jobs:
       - name: Copy Markdowns
         uses: andstor/copycat-action@v3
         with:
-          personal_token: ${{ secrets.ACTION_TOKEN  }}
+          personal_token: ${{ secrets.COPYCAT_TOKEN  }}
           src_branch: main
           src_path: /docs/.
           dst_owner: dan-lee76
