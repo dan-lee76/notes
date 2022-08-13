@@ -86,6 +86,13 @@ const config = {
             label: 'Year 2',
           },
           {
+            type: 'doc',
+            docId: 'MLSA/README',
+            position: 'left',
+            label: 'MLSA',
+          },
+          {to: 'blog', label: 'Blog', position: 'left'},
+          {
             type: 'search',
             position: 'right',
           },
