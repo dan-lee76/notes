@@ -44,7 +44,11 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -91,7 +95,10 @@ const config = {
             position: 'left',
             label: 'MLSA',
           },
-          {to: 'blog', label: 'Blog', position: 'left'},
+          {
+            to: 'blog', 
+            label: 'Blog', 
+            position: 'left'},
           {
             type: 'search',
             position: 'right',
