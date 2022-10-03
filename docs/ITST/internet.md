@@ -16,8 +16,24 @@ When connecting for the first time, ensure certificate matches.
 
 ## Connecting in Halls
 **eduroam**: Normal internet access, many devices can connect to this
-**UoN-halls**:"Devices which cannot access eduroam, such as IoT.
-*Connection to halls will be added soon... waiting on exact url*
+**UoN-halls**: Devices which cannot access eduroam, such as IoT.
+1. Log onto [pass.nottingham.ac.uk](https://pass.nottingham.ac.uk)
+2. Find your mac address, and add it to the site
+3. Connect that device to **UoN-halls** with the password: **Nottingham#1881**
+
+## Connecting on Andoird
+|                                   |                                     |
+|-----------------------------------|-------------------------------------|
+| SSID                              | eduroam                             |
+| Encryption                        | 802.1X, WPA2-Entrerprise            |
+| EAP Method                        | PEAP                                |
+| Phase 2 Auth                      | MSCHAPv2                            |
+| CA Certificate                    | System Certificate                  |
+| Domain                            | nottingham.ac.uk                    |
+| Username/Identity                 | uni email                           |
+| Outer Identity/Anonymous Identity | blank or anonymous@nottingham.ac.uk |
+| Password                          | uni password                        |
+| Proxy                             | Set to none                         |
 
 
 ## Troubleshoot Connecting
