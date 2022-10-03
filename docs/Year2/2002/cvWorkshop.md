@@ -21,7 +21,7 @@ Most relevant experience should be on first page.
 - Use name as a heading
 - Include 'References available on request' 
 
-![[2022-10-03 10-26-50.png]]
+![[./2022-10-03 10-26-50.png]]
 
 ## Technical Experience
 - Could be under Project experience, Education or Relevant experience
