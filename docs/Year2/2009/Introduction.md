@@ -1,7 +1,7 @@
 # Introduction to Algorithms Correctness and Efficiency
 _03/10/22_
 
-ACE - Algortihms Correctness and Efficiency
+ACE - Algorithms Correctness and Efficiency
 A+C - Introduction to formal reasoning (Autumn)
 A+E - Algorithms, Data Structures, and Efficiency
 
