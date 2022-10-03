@@ -1,0 +1,30 @@
+# Introduction to Developing Maintainable Software
+## Core attributes of maintainable software
+- Readable Code
+- Strong documentation
+- Consistent variable/functions conventions
+- Standard code layout (whitespace/variables)
+- Testability
+
+## Developing Maintainable Software
+### Three principles for developing maintainable software
+- Maintainability benefits most from adhering to simple guidelines
+	- Never write methods that have more than 15 lines of code
+- Maintainability is not an afterthought, but should be addressed from the very beginning of a development project
+- Some violations are worse than other; the more a software system compiles with the guidelines, the more maintainable it is
+
+What software maintenance involves: The process for managing and executing software maintenance activities is described. However, also need to consider how we can reduce the effort of maintenance.
+
+### Main Categories of Maintenance 
+- Corrective maintenance: Finding and fixing errors in the system
+- Adaptive Maintenance: The system has to be adapted to changes in the environment in which it operates
+- Perfective + Preventive Maintenance: Users of the system have new or changed requirements. Ways identified to increase the quality or prevent future bugs.
+
+### Software Maintenance Process
+- Understanding the client
+- Understanding the existing code
+- Refactoring the existing code
+- Extending the existing code
+- Working as a team
+- Managing client expectations
+- Managing the maintenance process
