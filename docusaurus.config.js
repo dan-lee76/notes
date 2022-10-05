@@ -61,6 +61,12 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        sitemap: {
+          changefreq: 'daily',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
@@ -80,6 +86,7 @@ const config = {
     ({
       navbar: {
         title: 'Nottes',
+        hideOnScroll: true,
         logo: {
           alt: 'Nottes Logo',
           src: 'img/nottsBlue.svg',
