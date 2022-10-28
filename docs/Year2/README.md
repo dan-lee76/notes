@@ -1,10 +1,10 @@
 # Year 2
 
 ## Current Modules
-- [COMP2002 - Group Projects [Full Year]](../2002/0.md)
-- [COMP2007 - Operating Systems & Concurrency [Autumn]](/2007/0.md)
-- [COMP2009 - Algorithms, Correctness & Efficiency [Full Year]](/2009/0.md)
-- [COMP2013 - Developing Maintainable Software [Autumn]](/2013/0.md)
+- [COMP2002 - Group Projects [Full Year]](2002/00.md)
+- [COMP2007 - Operating Systems & Concurrency [Autumn]](2007/00.md)
+- [COMP2009 - Algorithms, Correctness & Efficiency [Full Year]](2009/00.md)
+- [COMP2013 - Developing Maintainable Software [Autumn]](2013/00.md)
 
 ## Modules to come
 - COMP2003 - Advanced. Functional Programming [Spring]
