@@ -10,7 +10,7 @@
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css" integrity="sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.74c7ce81.css">
-<link rel="preload" href="/assets/js/runtime~main.30b1df8c.js" as="script">
+<link rel="preload" href="/assets/js/runtime~main.c013d43f.js" as="script">
 <link rel="preload" href="/assets/js/main.6be6d453.js" as="script">
 </head>
 <body class="navigation-with-keyboard" data-theme="light">
@@ -19,7 +19,7 @@
 <code>fst (0, infinity</code> -&gt; results in <code>0</code></p><ul><li>Outermost evaluation may give a result when innermost evaluation fails to terminate</li><li>If any evaluation sequence terminates, then so does outermost, with the same result</li><li>Outermost evaluation may require more steps that innermost. However this can easily be avoided by using pointers to indicate sharing of arguments</li></ul><p>Lazy evaluation = outermost evaluation + sharing of arguments</p><ul><li>Lazy evaluation ensures termination whenever possible, but never requires more steps than innermost evaluation and sometimes fewer</li></ul><h1>Infinite lists</h1><ul><li>In general, lazy evaluation expressions are only evaluated as much as required by the context in which they are used</li><li>Hence, ones is really a potentially infinite list</li></ul><h1>Modular Programming</h1><p>Lazy evaluation allows us to make programs more modular by separating control from data
 Without using lazy evaluation the control and data parts would need to be combined into one</p><h1>Generating Primes</h1><p>To generate the infinite sequence of primes:</p><ol><li>Write down the infinite sequence 2,3,4...,</li><li>Mark the first number p as being prime</li><li>Delete all multiple of p from the sequence</li><li>Return to the second step</li></ol></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/Year1/Programming Paradigms/Haskell/22.03.21 - Exercises on interaction"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">22.03.21 - Exercises on interaction</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Year1/Programming Paradigms/Haskell/Revision"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Functional language</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#termination" class="table-of-contents__link toc-highlight">Termination</a></li></ul></div></div></div></div></main></div></div><footer class="footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">a Dan Lee creations. 
  2022©</div></div></div></footer></div>
-<script src="/assets/js/runtime~main.30b1df8c.js"></script>
+<script src="/assets/js/runtime~main.c013d43f.js"></script>
 <script src="/assets/js/main.6be6d453.js"></script>
 </body>
 </html>
