@@ -134,9 +134,7 @@ begin
   apply np,
   apply na,
 end
-
 ```
-
 
 ### Summary of Tactics
 |             | How to prove | How to use          |
@@ -155,10 +153,10 @@ end
 - Can also use the option of `change` and `rewrite`
 - Have the ability to use `reflextivity`, `contradiction`
 
-
 ## Natural Numbers
 - Have the uses of `change` 
 - The one where you have to use induction -> `induction n with n' ih,`
   - Should try and use induction only once. The fewer the better
 - Sometimes ending the proof can be achieved by using `rewrite` or `reflextivity`
 - May have to use `existi` for when it is `∃`
+- Have the ability to use `apply congr_arg succ`
