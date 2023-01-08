@@ -11,6 +11,3 @@ Bosh! I did a thing. After applying to over 10 placements I final got the one I 
 Here's a lovely meme I cretated 
 
 ![](https://cdn.danlee.uk/content/posts/131845242463a2f72384b548.77103455.png)
-
-
-
