@@ -15,3 +15,9 @@ slorber:
   title: Docusaurus maintainer
   url: https://sebastienlorber.com
   image_url: https://github.com/slorber.png
+  
+dan:
+	name: Dan Lee
+	title: The guy
+	url: https://danlee.uk
+	image_url: https://cdn.danlee.uk/content/assets/userProfile.png
