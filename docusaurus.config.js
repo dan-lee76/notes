@@ -107,10 +107,16 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'MLSA/README',
+            docId: 'ITST/README',
             position: 'left',
-            label: 'MLSA',
+            label: 'Tech Support',
           },
+//           {
+//             type: 'doc',
+//             docId: 'MLSA/README',
+//             position: 'left',
+//             label: 'MLSA',
+//           },
           {
             to: 'blog', 
             label: 'Blog', 
