@@ -28,16 +28,3 @@ jobs:
           clean: true
           commit_message: "Notes copied from master to documentation branch!"
           
-      - uses: actions/checkout@v2
-      - name: Copy Blogs Markdowns
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.COPYCAT_TOKEN  }}
-          src_branch: main
-          src_path: /blog/.
-          dst_owner: dan-lee76
-          dst_repo_name: notes
-          dst_path: /blog/
-          dst_branch: documentation
-          clean: true
-          commit_message: "Blogs copied from master to documentation branch!"
