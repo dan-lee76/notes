@@ -111,16 +111,11 @@ const config = {
             position: 'left',
             label: 'Tech Support',
           },
-//           {
-//             type: 'doc',
-//             docId: 'MLSA/README',
-//             position: 'left',
-//             label: 'MLSA',
-//           },
           {
             to: 'blog', 
             label: 'Blog', 
-            position: 'left'},
+            position: 'left',
+          },
           {
             type: 'search',
             position: 'right',
