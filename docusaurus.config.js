@@ -107,6 +107,12 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'Year2/2007/25',
+            position: 'left',
+            label: 'COMP 2007 Revision',
+          },
+          {
+            type: 'doc',
             docId: 'ITST/README',
             position: 'left',
             label: 'Tech Support',
