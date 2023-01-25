@@ -107,9 +107,9 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'Year2/2007/25',
+            docId: 'Year2/2013/18',
             position: 'left',
-            label: 'COMP 2007 Revision',
+            label: 'COMP 2013 Revision',
           },
           {
             type: 'doc',
