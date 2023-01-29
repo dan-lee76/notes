@@ -2,14 +2,16 @@
 
 ## Current Modules
 - [COMP2002 - Group Projects [Full Year]](2002/00.md)
+- [COMP2003 - Adv. Functional Programming [Spring]](2003/00.md)
+- [COMP2006 - C++ Programming [Spring]](2006/00.md)
+- [COMP2009 - Algorithms Corret & Efficiency (ADE) [Full Year]](2009/ADE/00.md)
+- [COMP2012 - Languages and Computation [Spring]](2012/00.md)
+- [COMP2014 - Distributed Systems [Spring]](2014/00.md)
+
+## Past Modules
 - [COMP2007 - Operating Systems & Concurrency [Autumn]](2007/00.md)
 - [COMP2009 - Algorithms, Correctness & Efficiency [Full Year]](2009/00.md)
-	- [IFR - Introduction to Formal Reasoning [Autumn]](2007/00.md)
-	- ADE - Algorithms, Data Structures, and Efficiency [Spring]
+	- [IFR - Introduction to Formal Reasoning [Autumn]](2007/IFR/00.md)
+	- [ADE - Algorithms, Data Structures, and Efficiency [Spring]](2007/ADE/00.md)
 - [COMP2013 - Developing Maintainable Software [Autumn]](2013/00.md)
 
-## Modules to come
-- COMP2003 - Advanced. Functional Programming [Spring]
-- COMP2004 - Intro:Human Computer Interaction [Spring]
-- COMP2012 - Languages and Computation [Spring]
-- COMP2014 - Distributed Systems [Spring]
