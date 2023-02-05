@@ -45,7 +45,7 @@ When connecting for the first time, ensure certificate matches.
 Due to the upgraded certificate issued on the 12th August, all returning students will have to re-auth. This can easily be done by following these steps below:
 This also resolves the majority of WiFi issues
 1. Forget network 
-   - Windows: Right click on eduroam, click forget network
+   - Windows: Right click on Eduroam, click forget network
    - Mobile: Select Eduroam, press forget network
 2. [Log bag into eduroam ](#connecting-to-uon-internet)
 
