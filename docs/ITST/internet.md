@@ -55,6 +55,8 @@ If your unable to recieve the eduroam certificate, download the [cat tool](https
 ## Visiting Other Universities
 Other institutions allow connections to their internet facilities whilst using their Nottingham credentials. If you are having trouble connecting, forget network or download the cat tool
 
+## DNS
+Access to external DNS servers is blocked by the University firewall due to DNS having the ability to exfiltrate data or as a hidden control channel
 
 
 *Information is extracted from [Nottingham DTS WiFi helpdesk](https://www.nottingham.ac.uk/go/wifi)*
