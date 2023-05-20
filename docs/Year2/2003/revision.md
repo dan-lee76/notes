@@ -222,3 +222,134 @@ rev (xs ++ ys) = rev ys ++ rev xs
 ```haskell
 rev [x] = [x]
 ```
+
+## Making Append Vanish - Fast Reverse
+
+```haskell
+(++) :: [a] -> [a] -> [a]
+[] ++ ys = ys
+(x:xs) ++ ys = x:(xs++ys)
+
+reverse : [a] -> [a]
+reverse [] = []
+reverse (x:xs) = reverse xs ++ [x]
+-- Reverse is a recursive function with using the append operator
+```
+
+How many steps does an arbitrary append take?
+```haskell
+-- xs = [1,2]
+-- ys = [3]
+
+[1,2] ++ [3]
+1 : ([2]++[3])
+1:(2:([]++[3]))
+-- Base case applies
+1:2:[3]
+-- This ends up taking 3 steps
+
+xs ++ ys -- takes length xs +1 steps
+```
+
+How many evaluation steps does reverse xs take?
+```haskell
+reverse [1,2]
+-- reverse tail of the list
+reverse [2] ++ [1]
+(reverse [] ++ [2]) ++ [1]
+-- Know how to reverse the base case
+([] ++ [2]) ++ [1]
+-- Reverse takes 3 evaluation steps
+-- Then takes 1 step for first appens, and 2 steps for the second append
+
+reverse xs -- takes steps, 1+2+(n+1) where n = length xs 
+```
+
+reverse with append take quadratic time.
+
+Uses equational reasoning/ constructive induction
+
+```haskell
+reverse' xs ys = (reverse xs) ++ ys
+-- Specification for reverse'
+-- Has same effect has reverseing reverse xs and appending ys on it
+
+
+-- base case
+reverse' [] ys
+-- = apply specificaiton
+(reverse []) ++ ys
+-- = apply reverse
+[] ++ ys
+-- = apply ++
+ys
+-- Base case for the recursive function of reverse'
+
+reverse' [] ys = ys
+
+-- inductive case
+reverse' (x:xs) ys
+reverse (x:xs) ++ ys
+-- = apply def of reverse
+(reverse xs ++ [x]) ++ ys
+-- = When got ++, exploit that its assciative
+reverse xs ++ ([x] ++ ys)
+reverse xs ++ (x:ys)
+-- = Apply induction hyp
+reverse' xs (x:ys)
+
+reverse' (x:xs) ys = reverse' xs (x:ys)
+
+reverse' :: [a] -> [a] -> [a]
+reverse' [] ys = ys
+reverse' (x:xs) ys = reverse' xs (x:ys)
+
+reverse :: -> [a] -> [a]
+reverse xs = reverse' xs []
+```
+
+What will happen with the new def of reverse
+```haskell
+reverse [1,2,3]
+reverse' [1,2,3] []
+reverse' [2,3] [1]
+reverse' [3] [2,1]
+reverse' [] [3,2,1]
+[3,2,1]
+```
+
+### Example 2
+```haskell
+data Tree = Leaf Int | Node Tree Tree
+flatten :: Tree [Int]
+flatten (Leaf n) = [n]
+flatten (Node l r) = flatten l ++ flatten r
+
+flatten' t ns = flatten t ++ ns
+-- Specification
+
+-- Base Case
+flatten' (Leaf n) ns
+-- = apply specification
+flatten'(Leaf n) ++ ns
+[n] ++ ns
+n : ns
+
+flatten' (Leaf n) ns = n:ns
+
+-- Inductive Case
+flatten' (Node l r) ns
+flatten (Node l r) ++ ns
+(flatten l ++ flatten r) ++ ns
+flatten l ++ (flatten r ++ ns)
+-- apply hyp
+flatten l ++ (flatten' r ns)
+-- assume from hyp
+flatten' l (flatten' r ns)
+
+-- Answer
+flatten' :: Tree -> [Int] -> [Int]
+flatten' (Leaf n) ns = n:ns
+flatten' (Node l r) ns = flatten' l (flatten' r ns)
+```
+
