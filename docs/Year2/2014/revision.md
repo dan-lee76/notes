@@ -63,3 +63,36 @@
   * Write/read/take(read&delete)
   * Read and take done by pattern matching
   * Both space and time uncoupled
+
+
+## Content to revise from exam paper
+- Nodes do not run an OS, run directly on the node hardware
+- Replication - Send msgs to one another so theyre in sync
+	- For add, it would wait for responses from all the servers
+	- If server fails to respond, then marked as failed and carried out on a alternative server
+- Procs and cons of REST
+
+| Form Style                               | REST                                       |
+| ---------------------------------------- | ------------------------------------------ |
+| + Works directly with form               | - Requires AJAX or client                  |
+| + Direct feedback to user                | - ditto                                    |
+| - ad hoc signalling of errors to clients | +Easily extend interfaces                  |
+| - Harder to type param                   | Standard ways to signal errors/ type param |
+
+
+- Failures which can occur during RMI
+	- Process Failure - Server may have crashed (or been restarted)
+	- Network Failure - Network may become partitioned, or the loss rate too high to maintain the TCP connection
+	- TCP connection request would fail/time out, client runtime would throw a RemoteException
+	- Application specific errors
+- Benefits of having 2 DNS administrative zones
+	- Can tolerate 1 server crashing or being unreachable, as other server can respond, but cant deal with both of them crash
+- Setting up a server for Java RMI, need to register the object with the RMIRegistry using `java.rmi.Naming.rebind` with the new name
+- 
+## Things to look over
+- Partitions
+- DNS administration 
+- OSI Model
+- Load Balancer
+- HTTP Request order thing (One of the past papers)
+- Transactions
