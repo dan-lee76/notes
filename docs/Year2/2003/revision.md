@@ -355,3 +355,33 @@ flatten' (Leaf n) ns = n:ns
 flatten' (Node l r) ns = flatten' l (flatten' r ns)
 ```
 
+
+## Associativity law - Monads
+This rule describes how the bind operator works. If we have three monadic actions; the following equaiton holds true
+```haskell
+(m >>= n) >>= p ≡ m >>= (\x -> n x >>= p)
+```
+Ensures the order of sequencing actions does not affect the final result..
+Sort of saying we can chain them, and group them together in any way. 
+
+## General Bits and Bobs
+### What is a monad?
+A monad is a typeclass that represents computation with specific currying function. Provides a way to combine with side effects. The mondanic type class provides two fundamental operations:
+- `return` - Takes a value and wraps it into a monadic context. Essentially lifts a pure value into a monadic world.
+- `(>>=)` - Takes a monadic value and a function. Applies the function to the value inside the monad, and applies the function to the value inside the monand and produces a new monadic value. Allows equencing of compuytations by passing the output of one computation to the next.
+
+`fail` is used for error handling
+
+Will take in a funciton, and binds something whcih could fail, but in a pure type.
+### What is an applicative
+An applicative is a type class that represents the ability to apply functions to any type/context. Ability to combine computations that involves effects, but with a different sequencing behaviour. Defined with two operations;
+- `pure` (or `return`) - Takes a value and wraps it into an applicative contex. Similar to the monad return type.
+- `<*>` (apply) - Takes an applicative value that holds a function inside itself. It applies the function within the context of the second applicative value. Allows applying functions that are themseleves wrapped in an applicative context 
+Also allows you to apply fmap, which allows applying pure functions to a value inside an applicative context. 
+
+Unlike monads, they dont provide the ability to sequence computations based on the results of previous computations. These are executed independantly and the results are combined. 
+
+Useful when theres multiple computations that are independent of each other and want to combine their results in some way. 
+
+Will take something which will fail, and wrapping it up into a pure type
+
