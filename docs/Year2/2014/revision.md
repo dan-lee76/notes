@@ -88,11 +88,22 @@
 - Benefits of having 2 DNS administrative zones
 	- Can tolerate 1 server crashing or being unreachable, as other server can respond, but cant deal with both of them crash
 - Setting up a server for Java RMI, need to register the object with the RMIRegistry using `java.rmi.Naming.rebind` with the new name
-- 
+
+
+- Transactions: Assume the process can be trusted, there are no arbitrary failures and communication is reliable. Set aside a specialised coordinator process to coordinate the entire transaction. Broken into two sections; Tentatively, performing the operation. Making operation permanent by committing it.
+- Partitions - Split up a network, either physically or virtually. This increases performance, enhances security, simplifies network management, and also compliance and regulatory requirements. 
+
+|     | Internet Model         |
+| --- | ---------------------- |
+| 5   | Application            |
+| 4   | Transport (TCP/UDP)    |
+| 3   | Internet (IP)          |
+| 2   | Network interface/Link |
+| 1   | Physical               |
+
+- DNS Administrative Domain - Is a subset of namespace with a single administrative authority. Corresponds to a domain name suffix. Each authority has complete control over its own administrative zones.
+- Name Server - Records identify responsible name servers
+
 ## Things to look over
-- Partitions
 - DNS administration 
-- OSI Model
-- Load Balancer
 - HTTP Request order thing (One of the past papers)
-- Transactions
