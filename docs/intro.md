@@ -6,8 +6,6 @@ slug: /
 ### BSc Hons Computer Science with Year in Industry @ [University of Nottingham](https://cs.nott.ac.uk)
 
 ## Current notes in active development
-- [COMP2003 - Adv. Functional Programming [Spring]](Year2/2003/00.md)
-- [COMP2006 - C++ Programming [Spring]](Year2/2006/00.md)
 - [COMP2009 - Algorithms Corret & Efficiency (ADE) [Full Year]](Year2/2009/ADE/00.md)
 - [COMP2012 - Languages and Computation [Spring]](Year2/2012/00.md)
 - [COMP2014 - Distributed Systems [Spring]](Year2/2014/00.md)
