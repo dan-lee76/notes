@@ -7,8 +7,6 @@ slug: /
 
 ## Current notes in active development
 - [COMP2009 - Algorithms Corret & Efficiency (ADE) [Full Year]](Year2/2009/ADE/00.md)
-- [COMP2012 - Languages and Computation [Spring]](Year2/2012/00.md)
-- [COMP2014 - Distributed Systems [Spring]](Year2/2014/00.md)
 ## Quick Links to modules
 ### Year 1
 #### Semester 1
