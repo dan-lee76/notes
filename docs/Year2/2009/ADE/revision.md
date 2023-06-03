@@ -1,10 +1,83 @@
 # Revision
 
+## Stability
+Often sort objects according to some comparison function. Equal with respect to the desired ordering, but not necessarily that they have the same contents
 ## Master Theorem
 $$T(n) = aT(n/b)+f(n)$$
 Case 1: $f(n)=O(n^c)$ with $c<log_ba$. Therefore: $T(n) = \theta(n^{log_ba})$ 
+
 Case 2: $f(n)=\theta(n^c(\log n)^k)$ with $c=log_ba, k\ge0$. Therefore: $T(n) = \theta(n^c(log_ba)^{k+1})$ 
+
 Case 3: $f(n)=\Omega(n^c)$ with $c>log_ba$. Therefore: $T(n) = \theta(f(n))$ 
+
+## Bubble & Selection-Sort
+```
+void bubbleSort(int arr[]){
+	int i,j,temp;
+	for(i = arra.length-1; i>-; i--){
+		for(j = 0; j<i;j++){
+			temp = array[j];
+			arr[j] = arr[j+1];
+			arr[j+1] = temp;
+		}
+	}
+}
+```
+```
+void selectionSort(int arr[]){
+	int i, j, temp, pos_greatest;
+	for(i = arr.length-1; i>0; i--){
+		pos_greatest = 0;
+		for(j = 0; j<i;j++){
+			if(arr[j] >= arr[pos_greatest])
+				pos_greatest = j;
+		}
+		if (i != pos_greatest) {
+		temp = arr[i];
+		arr[i] = arr[pos_greatest];
+		arr[pos_greatest] = temp;
+		}
+	}
+}
+```
+Complexity is $O(n^2)$
+## Insertion Sort
+```
+void insertionSort(int arr[]){
+	for(int j=1; j<arr.length; j++){
+		int temp = arr[j];
+		int i = j;
+		while(i>0 && arr[i-1] > temp){
+			arr[i] = arr[i-1]
+			i--;
+		}
+		arr[i] = temp;
+	}
+}
+```
+Complexity is $O(n^2)$
+
+## Merge-Sort
+```
+mergesort(A){
+	divide A into left L and right R arrays
+	mergesort(L)
+	mergesort(R)
+	A=merge(L,R)
+}
+```
+Complexity is $O(n\log n)$
+## Quick Sort
+```
+qs(A){
+	p = pivot(A)
+	(L,R) = partition(A,p)
+	qs(L)
+	qs(R)
+}
+```
+Complexity is $O(n\log n)$
+
 ## Psudocode
 ### Binary Search
 ### Prim's Algo
