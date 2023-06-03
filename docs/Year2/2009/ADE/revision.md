@@ -78,8 +78,10 @@ qs(A){
 ```
 Complexity is $O(n\log n)$
 
+## MST
+MST - Minimum spanning sub-graph that is, a subset of the edges that is connected and that contains every node. Do not confuse a minimum TREE with a minimum shortest PATH
+
 ## Psudocode
-### Binary Search
 ### Prim's Algo
 - Start by picking any vertex M 
 - Choose the shortest edge from M to any other vertex N 
@@ -87,6 +89,13 @@ Complexity is $O(n\log n)$
 - Loop: 
 	- Continue to add at every step a shortest edge from a vertex in the “MST so far” to a vertex outside, until all vertices are in the MST 
 	- (If there are multiple shortest edges, then can take any arbitrary one)
+#### How is this optimal?
+- Let G be a weighted connected graph, and 
+	- let V1 and V2 be a partition of the vertices of G into two disjoint non-empty sets
+	- Furthermore, let e be an edge with minimum weight from among those with one endpoint in V1 and the other in V2
+	- There is an MST that has e as one of its edges
+- Can add edge e to T and remove some other edge between V1 and V2 and obtain a better MST
+- Algorithm adds a minimum weight edge between V1 and V2, and so this edge must be part of some MST.
 
 ### Change Giving
 ```
