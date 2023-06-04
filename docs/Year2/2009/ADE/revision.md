@@ -1,5 +1,11 @@
 # Revision
 
+## Amortised Cost
+### Incremental Strategy Analysis 
+- Amortized time of a push operation $O(n)$
+### Doubling Strategy Analysis
+- Amortized time of a single push operation $O(1)$
+
 ## Stability
 Often sort objects according to some comparison function. Equal with respect to the desired ordering, but not necessarily that they have the same contents
 ## Master Theorem
