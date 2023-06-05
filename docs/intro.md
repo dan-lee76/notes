@@ -5,8 +5,9 @@ slug: /
 ## Computer Science notes created by [Dan Lee](https://danlee.uk)
 ### BSc Hons Computer Science with Year in Industry @ [University of Nottingham](https://cs.nott.ac.uk)
 
-## Current notes in active development
-- [COMP2009 - Algorithms Corret & Efficiency (ADE) [Full Year]](Year2/2009/ADE/00.md)
+## Update (05/06/23)
+Nottes is taking a break for a year as Dan is now on placement 😀
+
 ## Quick Links to modules
 ### Year 1
 #### Semester 1
