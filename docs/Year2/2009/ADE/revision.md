@@ -133,6 +133,7 @@ for(each v adjacent to u){
 	} 
 } add u to list of closed nodes PQ.reorder(); // because some distances changed } return INFINITY; // no path to target
 ```
+Complexity = $O((|V|+|E|)* \log (|V|))$
 ### FW
 ```
 foreach k = 1, … (so “foreach nk ∈ V”) 
@@ -140,3 +141,4 @@ foreach k = 1, … (so “foreach nk ∈ V”)
 		foreach j ∈ V 
 			d(i,j,k+1) = min( d(i,j,k), d(i,k+1,k) + d(k+1,j,k) )
 ```
+Complexity = $O(|V|^3)$ 
