@@ -1,10 +1,4 @@
-# Year 2
 
-## Current Modules
-- [COMP2009 - Algorithms Correctness & Efficiency (ADE) [Full Year]](2009/ADE/00.md)
-
-
-## Past Modules
 - [COMP2002 - Group Projects [Full Year]](2002/00.md)
 - [COMP2003 - Adv. Functional Programming [Spring]](2003/00.md)
 - [COMP2006 - C++ Programming [Spring]](2006/00.md)
