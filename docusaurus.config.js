@@ -107,13 +107,19 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'Year3/README',
+            position: 'left',
+            label: 'Year 3',
+          },
+          {
+            type: 'doc',
             docId: 'ITST/README',
             position: 'left',
             label: 'Tech Support',
           },
           {
-            to: 'blog', 
-            label: 'Blog', 
+            to: 'blog',
+            label: 'Blog',
             position: 'left',
           },
           {
@@ -135,7 +141,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['java', 'cpp','csharp','haskell']
+        additionalLanguages: ['java', 'cpp', 'csharp', 'haskell']
       },
     }),
 };
