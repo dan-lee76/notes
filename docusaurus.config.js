@@ -117,11 +117,11 @@ const config = {
             position: 'left',
             label: 'Tech Support',
           },
-          {
-            to: 'blog',
-            label: 'Blog',
-            position: 'left',
-          },
+          // {
+          //   to: 'blog',
+          //   label: 'Blog',
+          //   position: 'left',
+          // },
           {
             type: 'search',
             position: 'right',
