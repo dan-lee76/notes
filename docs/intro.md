@@ -5,8 +5,6 @@ slug: /
 ## Computer Science notes created by [Dan Lee](https://danlee.uk)
 ### BSc Hons Computer Science with Year in Industry @ [University of Nottingham](https://cs.nott.ac.uk)
 
-## Update (05/06/23)
-Nottes is taking a break for a year as Dan is now on placement 😀
 
 ## Quick Links to modules
 ### Year 1
@@ -23,7 +21,6 @@ Nottes is taking a break for a year as Dan is now on placement 😀
 - [ ] Maths 2
 
 ### Year 2
-*All of these are correctly formatted🙂*
 
 - [COMP2003 - Adv. Functional Programming [Spring]](Year2/2003/00.md)
 - [COMP2006 - C++ Programming [Spring]](Year2/2006/00.md)
@@ -34,6 +31,12 @@ Nottes is taking a break for a year as Dan is now on placement 😀
 - [COMP2012 - Languages and Computation [Spring]](Year2/2012/00.md)
 - [COMP2013 - Dvlping Maintainable Software [Autumn]](Year2/2013/00.md)
 - [COMP2014 - Distributed Systems [Spring]](Year2/2014/00.md)
+
+### Year 3
+
+- [COMP3010 - Communication & Collaboration Technologies](Year3/3010/00.md)
+- [COMP3021 - Data Visualisation](Year3/3021/00.md)
+- [COMP3074 - Human-AI Interaction](Year3/3074/00.md)
 
 ## Content Notice
 Information present may not be accurate at time of writing. Information is provided by the [University of Nottingham](https://nott.ac.uk) and may be subject to copyright. Some of the notes are a bit bad, but some are good. Sections of notes will contain dan words/dan method. These are **EXCLUSIVE** terminologies I use to help me remember/understand. You may not understand them, but I do. 
