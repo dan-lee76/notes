@@ -22,8 +22,11 @@
 > Large LMs exhibit various kinds of bias, including stereotypical associations
 ## 2.2 Talk about race
 - Challenges chatbots face when engaging in conversations about race
-- **Blacklist and Race-Talks**: 
-
+- **Blacklist and Race-Talks**:  Often rely on blacklists to block offensive language, however this method is limited. Can only filter out words indiscriminately
+- **Data Bias** - Chatbots are trained on large datasets that often reflect racial biases. Microsoft's Tay chatbot becoming racist within hours of interacting online due to exposure to biased conversations
+- **Language Processing and Context** - NLP struggles with the complexities of race because they are heavily focused on syntax and not the broader context of the conversation. 
+- **ML Accountability** - Deep learning models used in chatbots are often inscrutable. Difficult to understand or correct bias. Paper calls for more tuneable algorithms than can be adjusted to handle race more responsibly. 
+- **Recommendations** - Improve race-talk in chatbots. Create diverse, racially-conscious databases. 
 ## 2.3 Man is to computer programmer
 
 ## 2.4 Word embeddings
