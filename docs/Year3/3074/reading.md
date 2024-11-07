@@ -38,3 +38,13 @@
 ## 2.7 Unreasonable effectiveness of Data
 
 ## 2.8 Speech and Langue Processing
+
+
+4. Raise awareness of bias -> Explainable AI, debiasing, Statements
+6. Goals of debiasing -> Reduce bias in word embeddings by ensuring gender neutral. Maintain embedding utility by mainitaing definitional
+7. Training a classifier we really want -> minimise the training error in a way that makes the classifier generalisable, estimate the generalisation error of our classifier
+8. Problematic stereotyped biases ->occupation-gender
+9. Fundamental assumptions for building a classifier -> Training data is representative of the real world with respect to the task we are trying to achieve
+
+
+HAI2024?!
