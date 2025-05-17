@@ -1,4 +1,4 @@
-## Chapter 1
+## Chapter 1 - Basic Static Analysis
 ASCII strings use 1 byte per char, unicode 2
 0x00 at the end is the NULL terminator
 
@@ -14,11 +14,11 @@ Static linking imports linked libraries into the executable, which makes it hard
 `.data` - Programs global data which is accessible from anywhere in the program
 `.rsrc` - Resources used by the executable that are not considered part of the executable, icons, imgs, strings etc
 
-## Chapter 2
+## Chapter 2 - Basic Dynamic Analysis
 Procmon captures a lot of data, however it doesnt capture everything. Misses device driver activity of user-mode component talking to a rootkit via device I/O, UI calls.
 
 
-## Chapter 4
+## Chapter 4 - Crash course of x86 Disassembly
 
 General registers, 32 bits in size, and can be referenced as either 32 or 16 bits in assembly.
 
@@ -57,8 +57,50 @@ Items are added right to left
 `H` = Handles. Reference to an object
 `LP` = Long Pointer. Pointer to another type
 
+## Chapter 11 - Malware Behaviour
+### Windows Reverse Shells
+Two simple malware coding implementations for `cmd.exe` - basic and multithreaded
+#### Basic
+- Easier to write, works just as well as multithreaded technique. 
+- Involves call to CreateProcess and the manipulation of the StartupInfo.
+- Socket is opened to connect to remote server
+- Socket is then tied to the standard streams. 
 
-## Chapter 15
+#### Multithreaded
+- Requires socket, two pipes and two threads. 
+- Uses data encoding
+- Used to manipulate or encode the data coming in or going out of the socket. 
+
+Remote administration tool - used to manage computer remotely.
+Botnets - Collection of compromised hosts, known as zombies, controlled by a single entity.  Goal is to compromise as many hosts as possible in order to create a large network.  
+
+### GINA Interception
+Windows XP Graphical Identification and Authentication. Malware users intercept this to steal user credentials. Intended to allow legitimate third parties to customise logon process to allow for auth via 3rd party like RFID. Implemented in a DLL
+
+### Hash Dumping
+Popular way to access system credentials. Could be cracked either offline or through a pass-the-hash attack. PSH and Pwdump are open source, so a lot of malware contain these. Most antivirus programs have signatures for the default compiled versions of these tools, so attackers have to compile their own version.
+Pwdump works by performing DLL injection inside the Local Security Authority Subsystem Service
+
+### Key Loggers
+- Kernel-based loggers are difficult to detect with user-mode applications. Part of a rootkit, that can act as a keyboard drivers to capture keystrokes, bypassing user-space programs and protections.
+
+User-based typically use the Windows API, implemented either by hooking or polling. Hooking uses the API to notify the malware a key is pressed. Polling constantly polls the state of the keys.
+
+### AppInit_DLLs
+- Malware gains persistence through special registry location called `AppInit_DLL`.
+
+### SvcHost DLLs
+- Malware will typically not create a new group, since it would be easier to detect. Instead, most malware will add itself to a pre-existing group or overwrite a nonvital service.
+
+### Trojanized System Binaries
+- Malware patches bytes of a system binary to force the system to execute the malware the next time the binary is run or loaded.
+- Normally done by patching the entry function so it jumps to the malicious code
+- Malware is added to empty section so does not impact normal operation. Will function no matter what. Will execute malware then jump back to normal location
+## Chapter 12 - Covert Malware Launching
+
+## Chapter 13 - Data Encoding
+
+## Chapter 15 - Anti Disassembly
 Linear Disassembly - Iterates over a block of code, disassembling one instruction at a time linearly without deviating.  Easiest to defeat because they are unable to distinguish between code and data.
 
 Flow-oriented disassembler - Doesn't blindly iterate over a buffer, assuming the data is nothing but instructions packed neatly together. Examines each instruction and builds a list of locations to disassemble
